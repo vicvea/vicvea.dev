@@ -1,10 +1,11 @@
 * {
-    outlin: 1px solid gray;
+    outline: 1px solid gray;
 }
 body {
     margin: 0;
-    height: 2000px;
+    height: 2250px;
     background-color: rgb(21, 21, 21);
+    background-image: linear-gradient(180deg, rgb(31, 37, 55), rgb(12, 12, 12)60%);
 }
 header {
     width: 100%;
@@ -25,7 +26,7 @@ header a {
     box-sizing: border-box;
 }
 .logo {
-    margin-left: 10%;
+    margin-left: calc(10% - 10px);;
 }
 .logo a{
     font-family: 'red hat display', sans-serif;
@@ -34,9 +35,10 @@ header a {
     display: inline-block;
     text-transform: uppercase;
     color: white;
+    padding: 0 10px;
 }
 nav {
-    margin-right: 10%;
+    margin-right: calc(10% - 10px);
 }
 .nav-links {
     font-family: 'red hat display', sans-serif;
@@ -50,9 +52,8 @@ nav {
 .nav-links a {
     color: rgb(255, 255, 255);
     padding: 10px;
-    transition: 500ms;
+    transition: 250ms;
     border-radius: 5px;
-    
 }
 .nav-links a:hover {
     background-color: rgb(255, 255, 255);
@@ -60,15 +61,49 @@ nav {
     border-radius: 10px;
 }
 .landing-page {
-    height: 90vh;
+    height: 100vh;
     width: 100vw;
-    background-color: rgb(55, 51, 51);
+    background-colo: rgb(40, 40, 40);
     margin-top: -100px
+}.projects h1 {
+    font-family: 'red hat display', sans-serif;
+    font-size: 42px;
+    color: white;
+    text-align: center;
+    margin: 0 10%;
 }
-.portfolio-grid {
-    background-color: rgb(69, 69, 69);
-    width: 80%;
+.project-description {
+    color: white;
+    font-family: 'red hat display', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    margin: 20px 10%;
+}
+.portfolio-container {
+    width: 100%;
     height: 1000px;
-    margin: -10vh auto;
-    border-radius: 50px;
+    margin: 5vh auto;
+    background-color: brown;
+    position: relative;
+    align-items: center;
+}
+.project-tier {
+    color: white;
+    background-color: rgb(41, 49, 79);
+    font-family: 'red hat display', sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin: -18px auto;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.project-box {
+    height: 500px;
+    background-color: rgb(52, 42, 42);
+    margin: 0 10%;
+}
+.portfolio-grid .project-tier {
+align-items: center;
 }
