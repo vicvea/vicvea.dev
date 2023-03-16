@@ -1,54 +1,105 @@
-* {
-    outline: 1px solid blac;
+ {
+    outline: 1px solid rgb(121, 121, 121);;
 }
 body {
     margin: 0;
-    background-color: rgb(235, 230, 220);
+    height: 2000px;
+    background-color: rgb(21, 21, 21);
 }
 header {
-    width:100%;
-    height: 60px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(21, 21, 21);
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    position: ;
 }
 header a {
+    text-decoration: none;
+}
+eader a {
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'red hat display', sans-serif;
-    color: black;
-    padding: 0px 10px ;
+    color: rgb(255, 255, 255);
 }
-.logo {
+.log {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: calc(10% - 10px);
     box-sizing: border-box;
     font-family: 'red hat display', sans-serif;
     font-weight: 700;
     color: black;
     font-size: 30px;
+
 }
-nav {
+av {
     display: inline-block;
-    margin: 0px;
-}
-nav a {
-    padding: 10px;
+    float: rigt;
     font-family: 'red hat display', sans-serif;
     font-weight: 700;
     letter-spacing: .05ch;
-    color: black;
+    color: rgb(255, 255, 255);
 }
-nav a:hover {
-    background-color: hsl(0, 0%, 75%);
+av a:hover {
+    background-color: hsl(0, 0%, 90%);
     border-radius: 5px;
 }
-nav, ul {
-    margin: 0px;
+av, ul {
+    margin: 0;
 }
-.nav-links {
+.nav-link {
     display: inline-block;
     box-sizing: border-box;
+}
+.logo {
+    margin-left: 10%;
+}
+.logo a{
+    font-family: 'red hat display', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+}
+nav {
+    margin-right: 10%;
+}
+.nav-links {
+    font-family: 'red hat display', sans-serif;
+    display: inline-block;
+    color: rgb(126, 77, 77);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+.nav-links a {
+    color: rgb(255, 255, 255);
     padding: 10px;
-    margin-right: 20px;
+    transition: 500ms;
+    border-radius: 5px;
+    
+}
+.nav-links a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+}
+.landing-page {
+    height: 90vh;
+    width: 100vw;
+    background-color: rgb(55, 51, 51);
+    margin-top: -100px
+}
+.portfolio-grid {
+    background-color: rgb(69, 69, 69);
+    width: 80%;
+    height: 1000px;
+    margin: -10vh auto;
+    border-radius: 50px;
 }
