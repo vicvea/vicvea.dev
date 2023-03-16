@@ -1,5 +1,5 @@
- {
-    outline: 1px solid rgb(121, 121, 121);;
+* {
+    outlin: 1px solid gray;
 }
 body {
     margin: 0;
@@ -19,37 +19,6 @@ header {
 }
 header a {
     text-decoration: none;
-}
-eader a {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: 'red hat display', sans-serif;
-    color: rgb(255, 255, 255);
-}
-.log {
-    display: inline-block;
-    margin-left: calc(10% - 10px);
-    box-sizing: border-box;
-    font-family: 'red hat display', sans-serif;
-    font-weight: 700;
-    color: black;
-    font-size: 30px;
-
-}
-av {
-    display: inline-block;
-    float: rigt;
-    font-family: 'red hat display', sans-serif;
-    font-weight: 700;
-    letter-spacing: .05ch;
-    color: rgb(255, 255, 255);
-}
-av a:hover {
-    background-color: hsl(0, 0%, 90%);
-    border-radius: 5px;
-}
-av, ul {
-    margin: 0;
 }
 .nav-link {
     display: inline-block;
