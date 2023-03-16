@@ -1,0 +1,54 @@
+ {
+    outline: 1px solid black;
+}
+body {
+    margin: 0;
+    background-color: rgb(235, 230, 220);
+}
+header {
+    width:100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+header a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'red hat display', sans-serif;
+    color: black;
+    padding: 0px 10px ;
+}
+.logo {
+    display: inline-block;
+    margin-left: 10px;
+    box-sizing: border-box;
+    font-family: 'red hat display', sans-serif;
+    font-weight: 700;
+    color: black;
+    font-size: 30px;
+}
+nav {
+    display: inline-block;
+    margin: 0px;
+}
+nav a {
+    padding: 10px;
+    font-family: 'red hat display', sans-serif;
+    font-weight: 700;
+    letter-spacing: .05ch;
+    color: black;
+}
+nav a:hover {
+    background-color: hsl(0, 0%, 75%);
+    border-radius: 5px;
+}
+nav, ul {
+    margin: 0px;
+}
+.nav-links {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-right: 20px;
+}
