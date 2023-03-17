@@ -111,12 +111,16 @@ nav {
     grid-template-rows: 1fr 1fr;
     row-gap: 25px;
     column-gap: 25px;
-    overflow: hidden;
+    min-width: 500px;
 }
 .project-card {
     border-radius: 25px;
     overflow: hidden;
     border: 1px solid white;
+    transition: 250ms;
+}
+.project-card:hover {
+    transform: scale(1.03);
 }
 .project-thumbnail {
     aspect-ratio: 16/9;
