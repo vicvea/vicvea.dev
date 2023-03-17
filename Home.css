@@ -1,4 +1,4 @@
- {
+* {
     outline: 1px solid gray;
 }
 footer {
@@ -165,4 +165,49 @@ nav {
 }
 .code-link {
     border-right: 1px solid white;
+}
+
+.tech-stack {
+    height: 500px;
+    background-color: rgb(93, 93, 73);
+    margin: 0 10%;
+    margin-bottom: 50px;
+}
+.tech-stack h1 {
+    color: white;
+    font-family: 'red hat display', sans-serif;
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 10px;
+    
+}
+.tech-stack p {
+    color: white;
+    font-family: 'red hat display', sans-serif;
+    text-align: center;
+    font-size: 21px;
+    margin-bottom: 50px;
+}
+.stack-grid {
+    outline: 1px solid white;
+    grid-template-columns: auto;
+    display: flex;
+    justify-content: center;
+}
+.stack-card {
+    height: 250px;
+    width: auto;
+    border: 1px solid green;
+}
+.stack-card img {
+    height: 100px;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+.stack-card h1 {
+    margin: 0;
+}
+.stack-card p {
+    margin: 0;
 }
