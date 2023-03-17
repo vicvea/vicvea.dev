@@ -1,9 +1,13 @@
-* {
+ {
     outline: 1px solid gray;
+}
+footer {
+    height: 100px;
+    background-color: gainsboro;
+    opacity: 20%;
 }
 body {
     margin: 0;
-    height: 2250px;
     background-color: rgb(21, 21, 21);
     background-image: linear-gradient(180deg, rgb(31, 37, 55), rgb(12, 12, 12)60%);
 }
@@ -13,7 +17,6 @@ header {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background: transparent;
 }
 header a {
@@ -24,7 +27,7 @@ header a {
     box-sizing: border-box;
 }
 .logo {
-    margin-left: calc(10% - 10px);;
+    margin-left: calc(10% - 10px);
 }
 .logo a{
     font-family: 'red hat display', sans-serif;
@@ -61,28 +64,32 @@ nav {
 .landing-page {
     height: 100vh;
     margin-top: -100px;
-}.projects h1 {
+}
+.projects-intro {
+}
+.projects-intro h1 {
     font-family: 'red hat display', sans-serif;
     font-size: 42px;
     color: white;
     text-align: center;
-    margin: 0 10%;
+    margin: 0 10% 10px;
 }
-.project-description {
+.projects-intro p {
     color: white;
     font-family: 'red hat display', sans-serif;
     font-size: 21px;
     text-align: center;
-    margin: 20px 10%;
+    margin: 0 10% 50px;
 }
 .portfolio-container {
-    margin: 50px auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
     position: relative;
     align-items: center;
 }
 .project-tier {
     color: white;
-    background-color: rgb(41, 49, 79);
+    background-color: rgb(18, 20, 31);
     font-family: 'red hat display', sans-serif;
     position: absolute;
     left: 50%;
@@ -91,23 +98,67 @@ nav {
     padding: 5px 10px;
     font-size: 20px;
     border-radius: 10px;
+    border: 1px solid white;
 }
 .tier-gap {
     height: 50px;
+    border-top: 1px solid white;
 }
 .project-grid {
     margin: 0 10%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     row-gap: 25px;
     column-gap: 25px;
+    overflow: hidden;
 }
 .project-card {
-    height: 400px;
     border-radius: 25px;
+    overflow: hidden;
+    border: 1px solid white;
 }
 .project-thumbnail {
-    margin: 15px;
-    height: 60%;
-    border-radius: 20px;
+    aspect-ratio: 16/9;
+    border-bottom: 1px solid white;
+}
+.card-title {
+    color: white;
+    font-family: 'red hat display', sans-serif;
+    margin: 0;
+    padding: 5px 15px 0;
+}
+.card-description {
+    color: white;
+    font-family: 'red hat display', sans-serif;
+    margin: 0;
+    padding: 0 15px 12px;
+}
+.card-links {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-top: 1px solid white;
+    overflow: hidden;
+}
+.code-link, .demo-link{
+    font-size: 18px;
+    font-family: 'red hat display', sans-serif;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 100% 0;
+    transition: 250ms;
+}
+.code-link:hover, .demo-link:hover{
+    font-family: 'red hat display', sans-serif;
+    width: 50%;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.code-link {
+    border-right: 1px solid white;
 }
