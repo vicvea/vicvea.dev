@@ -66,8 +66,45 @@ nav {
     border-radius: 10px;
 }
 .landing-page {
-    height: 100vh;
+    height: calc(100vh - 50px);
     margin-top: -100px;
+}
+.landing-container {
+    display: flex;
+    height: calc(100vh - 100px);
+    margin: 100px 10%;
+    align-items: center;
+    outline: 1px solid white;
+    min-height: 400px;
+}
+.left-div, .right-div {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    color: white;
+    padding: 0 5%;
+}
+.left-div {
+    font-family: 'red hat display', sans-serif;
+    align-items: center;
+    display: flex;
+}
+.left-div-text {
+    align-items: center;
+    visibility: hidden;
+}
+.left-div h1{
+    margin: 0 0 .2ch;
+    font-size: 10ch;
+    line-height: 1.5ch;
+}
+.left-div p {
+    margin: 0;
+    font-size: 2ch;
+    color: rgba(255, 255, 255, 0.75);
+}
+.right-div {
+    font-family: 'red hat display', sans-serif;
 }
 .projects-intro {
     font-family: 'red hat display', sans-serif;
@@ -145,6 +182,15 @@ nav {
     padding: 0 15px 12px;
     backdrop-filter: blur(1px);
 }
+.made-with {
+    color: white;
+    font-family: 'red hat display';
+    word-spacing: 10px;
+    margin: 0;
+    padding: 10px 15px;
+    border-top: 1px solid white;
+    background-color: rgb(255, 255, 255, 0.05);
+}
 .card-links {
     height: 50px;
     display: flex;
@@ -162,13 +208,14 @@ nav {
     box-sizing: border-box;
     padding: 100% 0;
     transition: 250ms;
+    font-weight: 500;
 }
 .code-link:hover, .demo-link:hover{
     font-family: 'red hat display', sans-serif;
     width: 50%;
     color: rgb(0, 0, 0);
-    background-color: white;
-    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.75);
+    font-weight: 600;
     cursor: pointer;
 }
 .code-link {
@@ -201,6 +248,10 @@ nav {
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    transition: 250ms;
+}
+.stack-img:hover {
+    transform: scale(1.1);
 }
 .stack-card img {
     height: 100px;
@@ -210,5 +261,7 @@ nav {
     font-family: 'red hat display', sans-serif;
     color: white;
     margin-bottom: 0px;
-    font-size: 24px;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
