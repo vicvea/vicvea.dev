@@ -1,14 +1,8 @@
  {
     outline: 1px solid gray;
 }
-footer {
-    height: 100px;
-    background-color: gainsboro;
-    opacity: 20%;
-}
 body {
     margin: 0;
-    background-color: rgb(100, 100, 100);
     background: linear-gradient(to bottom right, #4990d8, #49ee6a, #f1f66d, #dc6057, #e943e6)important;
     background-image: linear-gradient(180deg, rgb(31, 37, 55), rgb(12, 12, 12)60%);
 }
@@ -277,6 +271,7 @@ nav {
 footer {
     margin: 50px 10%;
     height: 300px;
+    background-color: white;
 }
 .socials-grid {
     grid-template-columns: auto;
@@ -285,19 +280,17 @@ footer {
     padding-bottom: 50px;
 }
 .social-container {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     object-fit: cover;
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
-    outline: 5px solid rgb(88, 81, 81);
+    box-sizing: border-box; 
+    outline: 3px solid rgb(0, 0, 0);
     border-radius: 50%;
-    padding: 20px;
-    box-sizing: border-box;
-    margin: 0 10px;
+    padding: 10px;
+    margin: 50px 10px;
 }
 .social-container img {
-    color: white;
-    background-color: white;
+    filter: hue-rotate(180deg);
 }
