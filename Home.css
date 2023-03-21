@@ -261,23 +261,27 @@ nav {
 }
 .contact {
     margin-bottom: 50px;
-    background-color: rgba(255, 255, 255, 1.01);
+    background-color: rgba(255, 255, 255, 0.01);
     min-height: 100px;
     font-family: 'red hat display', sans-serif;
-}
-.contact  {
     text-align: center;
+    color: white;
 }
 footer {
     background-color: rgba(255, 255, 255, 0.025);
     color: white;
+    margin: 0;
+    border-top: 1px solid rgb(255, 255, 255);
+}
+.socials {
+
 }
 .socials-grid {
     grid-template-columns: auto;
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
     outline: px solid;
+
 }
 .social-container {
     height: 50px;
@@ -286,7 +290,7 @@ footer {
     display: flex;
     justify-content: center;
     box-sizing: border-box; 
-    border-radius: 25%;
+    border-radius: 10px;
     padding: 10px;
     margin: 50px 10px;
     transition: 250ms;
@@ -302,4 +306,20 @@ footer {
 }
 .footer-text {
     font-family: 'red hat display', sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 12px;
+    letter-spacing: 0.0ch;
+    text-decoration: none;
+    color: white;
+}
+.footer-text a {
+    color: white;
+    text-decoration: none
+}
+.footer-text a:hover {
+    cursor: pointer;
+    opacity: 75%;
+    text-decoration: none;
+    color: white;
 }
