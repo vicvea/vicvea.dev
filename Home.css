@@ -8,7 +8,7 @@ footer {
 }
 body {
     margin: 0;
-    background-color: rgb(21, 21, 21);
+    background-color: rgb(100, 100, 100);
     background: linear-gradient(to bottom right, #4990d8, #49ee6a, #f1f66d, #dc6057, #e943e6)important;
     background-image: linear-gradient(180deg, rgb(31, 37, 55), rgb(12, 12, 12)60%);
 }
@@ -264,4 +264,40 @@ nav {
     font-size: 21px;
     font-weight: 600;
     letter-spacing: 1px;
+}
+.contact {
+    margin-bottom: 50px;
+    background-color: rgba(255, 255, 255, 1.01);
+    min-height: 100px;
+    font-family: 'red hat display', sans-serif;
+}
+.contact  {
+    text-align: center;
+}
+footer {
+    margin: 50px 10%;
+    height: 300px;
+}
+.socials-grid {
+    grid-template-columns: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.social-container {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    outline: 5px solid rgb(88, 81, 81);
+    border-radius: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 10px;
+}
+.social-container img {
+    color: white;
+    background-color: white;
 }
