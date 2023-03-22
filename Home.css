@@ -57,6 +57,7 @@ nav {
     border: 1;
     color: black;
     border-radius: 10px;
+    scale: 1.1;
 }
 .landing-page {
     height: calc(100vh - 50px);
@@ -123,7 +124,6 @@ nav {
 .project-section {
     color: white;
     backdrop-filter: blur(50px);
-    background-color: rgb(163, 138, 138, 0.);
     font-family: 'red hat display', sans-serif;
     position: absolute;
     left: 50%;
@@ -134,19 +134,16 @@ nav {
     border-radius: 10px;
     border: 1px solid white;
 }
-.tier-gap {
-    height: 50px;
-    border-top: 1px solid white;
-}
 .project-grid {
-    margin: 0 10%;
-    padding: 50px 0;
+    margin: 0 10% 50px;
+    padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     row-gap: 25px;
     column-gap: 25px;
     min-width: 500px;
+    backgroun-color: green;
 }
 .project-card {
     border-radius: 25px;
@@ -219,14 +216,12 @@ nav {
 }
 
 .tech-stack {
-    border: 1px solid white;
     margin: 50px 0;
+    padding: 50px 0;
     background-color: rgba(255, 255, 255, .025);
 }
 .stack-container {
-    background-color: brown;
-    margin: 50px 10%;
-    padding: 0px 0;
+    margin: 0px 10%;
 }
 .stack-title {
     color: white;
@@ -268,15 +263,14 @@ nav {
 }
 .contact {
     margin: 50px 0;
-    border: 1px solid;
+    padding: 50px 0;
     background-color: rgba(255, 255, 255, .025);
     font-family: 'red hat display', sans-serif;
     text-align: center;
     color: white;
 }
 .contact-container {
-    margin: 50px 10%;
-    background-color: #dc6057;
+    margin: 0px 10%;
 }
 .contact h1{
     font-size: 42px;
@@ -287,20 +281,25 @@ nav {
     font-size: 21px;
     margin-bottom: 25px;
 }
-.contact .email-link {
+.contact .email-link a {
     color: rgb(255, 255, 255);
     background-color: transparent;
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
     font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 1px;
     transition: 250ms;
+    display: inline-block;
+    text-decoration: none;
 }
-.contact .email-link:hover {
+.contact .email-link a:hover {
     cursor: pointer;
     color: black;
     background-color: rgba(255, 255, 255, 0.75);
     border-color: black;
+    scale: 1.1;
 }
 footer {
     background-color: rgba(255, 255, 255, 0.025);
@@ -330,8 +329,17 @@ footer {
     margin: 25px 10px;
     transition: 250ms;
 }
+.social-container a{
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transition: 250ms;
+}
 .social-container:hover{
-    scale: 1.5;
+    scale: 1.2;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.75);
     filter: invert();
@@ -344,7 +352,7 @@ footer {
     text-align: center;
     padding-bottom: 10px;
     font-size: 12px;
-    letter-spacing: 0.0ch;
+    letter-spacing: .5px;
     text-decoration: none;
     color: white;
 }
