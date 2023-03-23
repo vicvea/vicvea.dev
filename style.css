@@ -1,4 +1,4 @@
-* {
+ {
     outline: 1px solid gray; /* Used when you want to see all of the borders without changing size */
 }
 body {
@@ -31,9 +31,6 @@ header a {
     text-transform: uppercase;
     color: white;
     padding: 0 10px;
-}
-.logo a:hover {
-    scale: 1.1;
 }
 nav {
     margin-right: calc(10% - 10px);
