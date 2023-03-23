@@ -63,14 +63,12 @@ nav {
     scale: 1.1;
 }
 .landing-page {
-    height: calc(100vh - 50px);
-    margin-top: -100px;
-    
+
 }
 .landing-container {
     display: flex;
     height: calc(100vh - 100px);
-    margin: 100px 10%;
+    margin: 0 10%;
     align-items: center;
     outline: 1px solid white;
     min-height: 400px;
@@ -148,7 +146,6 @@ nav {
     row-gap: 25px;
     column-gap: 25px;
     min-width: 500px;
-    backgroun-color: green;
 }
 .project-card {
     border-radius: 25px;
@@ -290,6 +287,10 @@ nav {
     margin-bottom: 25px;
 }
 .certificate-grid {
+    grid-template-columns: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .roadmap {
     background-color: rgba(255, 255, 255, .025);
