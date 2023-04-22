@@ -1,5 +1,8 @@
-* {
+ {
     outline: 1px solid gray; /* Used when you want to see all of the borders without changing size */
+}
+::seection {
+    
 }
 body {
     margin: 0;
@@ -141,7 +144,7 @@ nav {
 }
 .project-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto ;
     grid-template-rows: 1fr 1fr;
     row-gap: 25px;
     column-gap: 25px;
@@ -152,9 +155,11 @@ nav {
     overflow: hidden;
     border: 1px solid white;
     transition: 250ms;
+    outline: 0 solid white;
 }
 .project-card:hover {
     transform: scale(1.03);
+    outline: 1px solid white;
 }
 .project-thumbnail {
     aspect-ratio: 16/9;
@@ -179,7 +184,7 @@ nav {
 }
 .made-with {
     color: white;
-    font-family: 'red hat display';
+    font-family: 'red hat display', sans-serif;
     word-spacing: 10px;
     margin: 0;
     padding: 10px 15px;
