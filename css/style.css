@@ -305,6 +305,7 @@ nav {
 }
 .certificate-card h4::before {
     content: 'By ';
+    
 }
 .certificate-card h4 {
     font-weight: 400;
