@@ -230,7 +230,7 @@ nav {
 .stack-container {
     margin: 0px 10%;
 }
-.stack-title {
+.stack-title, .certificate-title {
     color: white;
     font-family: 'red hat display', sans-serif;
     text-align: center;
@@ -238,14 +238,14 @@ nav {
     margin-top: 0px;
     margin-bottom: 25px;
 }
-.stack-grid {
+.stack-grid, .certificate-grid{
     grid-template-columns: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: -50px; /* same as margin-bottom in .stack-card h1 but negative to offset */
 }
-.stack-img {
+.stack-img, .certificate-img {
     height: 100px;
     width: 150px;
     object-fit: cover;
@@ -255,10 +255,10 @@ nav {
     transition: 250ms;
     overflow: hidden;
 }
-.stack-img:hover {
+.stack-img:hover, .certificate-img:hover {
     transform: scale(1.1);
 }
-.stack-card img {
+.stack-card img, .certificate-card img {
     height: 100px;
 }
 .stack-card h1 {
@@ -266,6 +266,15 @@ nav {
     font-family: 'red hat display', sans-serif;
     color: white;
     margin-bottom: 50px;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.certificate-card h1 {
+    text-align: center;
+    font-family: 'red hat display', sans-serif;
+    color: white;
+    margin-bottom: 0px;
     font-size: 21px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -282,11 +291,6 @@ nav {
     font-family: 'red hat display', sans-serif;
     text-align: center;
 }
-.certificates-container h1 {
-    font-size: 42px;
-    margin-top: 0px;
-    margin-bottom: 25px;
-}
 .certificates-container p {
     font-size: 21px;
     margin-bottom: 25px;
@@ -296,6 +300,16 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.certificate-card h1{
+}
+.certificate-card h4::before {
+    content: 'By ';
+}
+.certificate-card h4 {
+    font-weight: 400;
+    margin-bottom: 50px;
+    margin-top: 10px;
 }
 .roadmap {
     background-color: rgba(255, 255, 255, .025);
