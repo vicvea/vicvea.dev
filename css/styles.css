@@ -1,4 +1,4 @@
- {
+* {
     outline: 1px solid gray; /* Used when you want to see all of the borders without changing size */
 }
 ::seection {
@@ -145,7 +145,7 @@ nav {
 .project-grid {
     display: grid;
     grid-template-columns: auto auto auto ;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto ;
     row-gap: 25px;
     column-gap: 25px;
     min-width: 500px;
