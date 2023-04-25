@@ -245,7 +245,7 @@ nav {
     justify-content: center;
     margin-bottom: -50px; /* same as margin-bottom in .stack-card h1 but negative to offset */
 }
-.stack-img, .certificate-img {
+.stack-img {
     height: 100px;
     width: 150px;
     object-fit: cover;
@@ -253,12 +253,11 @@ nav {
     justify-content: center;
     margin-bottom: 10px;
     transition: 250ms;
-    overflow: hidden;
 }
 .stack-img:hover, .certificate-img:hover {
     transform: scale(1.1);
 }
-.stack-card img, .certificate-card img {
+.stack-card img {
     height: 100px;
 }
 .stack-card h1 {
@@ -301,7 +300,31 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
 }
+.certificate-card {
+}
+.certificate-img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    transition: 250ms;
+    overflow: hidden;
+    overflow: hidden;
+}
+.certificate-img img {
+    border-radius: 10px;
+    transition: 250ms;
+}
+.certificate-img img:hover {
+    border-radius: 0px;
+}
+.certificate-card {
+
+}
 .certificate-card h1{
+    font-size: 24px;
 }
 .certificate-card h4::before {
     content: 'By ';
