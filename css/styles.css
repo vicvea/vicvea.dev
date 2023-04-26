@@ -1,4 +1,4 @@
- {
+* {
     outline: 1px solid gray; /* Used when you want to see all of the borders without changing size */
 }
 ::section {
@@ -280,6 +280,7 @@ nav {
     justify-content: center;
     margin-bottom: 10px;
     transition: 250ms;
+    overflow: hidden;
 }
 .stack-img:hover, .certificate-img:hover {
     transform: scale(1.1);
