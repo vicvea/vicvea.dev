@@ -1,7 +1,7 @@
 * {
     outline: 1px solid gray; /* Used when you want to see all of the borders without changing size */
 }
-::seection {
+::section {
     
 }
 body {
@@ -221,7 +221,25 @@ nav {
 .code-link {
     border-right: 1px solid white;
 }
-
+.see-more-button {
+    color: white;
+    backdrop-filter: blur(50px);
+    font-family: 'red hat display', sans-serif;
+    display: inline-block;
+    margin: -20px auto;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    transition: 250ms;
+}
+.see-more-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.see-more-button a {
+    
+}
 .tech-stack {
     margin: 50px 0;
     padding: 50px 0;
