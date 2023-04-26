@@ -1,4 +1,4 @@
-* {
+ {
     outline: 1px solid gray; /* Used when you want to see all of the borders without changing size */
 }
 ::section {
@@ -8,6 +8,10 @@ body {
     margin: 0;
     background: linear-gradient(to bottom right, #4990d8, #49ee6a, #f1f66d, #dc6057, #e943e6)important;
     background-image: linear-gradient(180deg, rgb(31, 37, 55), rgb(12, 12, 12)60%);
+}
+a {
+    text-decoration: none;
+    color: white;
 }
 header {
     height: 100px;
@@ -221,6 +225,10 @@ nav {
 .code-link {
     border-right: 1px solid white;
 }
+.see-more-container {
+    display: flex;
+
+}
 .see-more-button {
     color: white;
     backdrop-filter: blur(50px);
@@ -232,6 +240,7 @@ nav {
     border-radius: 10px;
     border: 1px solid white;
     transition: 250ms;
+    align-items: center;
 }
 .see-more-button:hover {
     transform: scale(1.1);
