@@ -148,10 +148,10 @@ nav {
 }
 .project-grid {
     display: grid;
-    grid-template-columns: auto auto auto ;
-    grid-template-rows: auto ;
-    row-gap: 25px;
-    column-gap: 25px;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-rows: 1fr ;
+    grid-auto-rows: ;
+    gap: 25px;
     min-width: 500px;
 }
 .project-card {
@@ -227,7 +227,8 @@ nav {
 }
 .see-more-container {
     display: flex;
-
+    margin-top: 50px;
+    background-color: #b69a40;
 }
 .see-more-button {
     color: white;
@@ -267,10 +268,11 @@ nav {
 }
 .stack-grid, .certificate-grid{
     grid-template-columns: auto;
+    row-gap: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: -50px; /* same as margin-bottom in .stack-card h1 but negative to offset */
+    margin-bottom: -0px; /* same as margin-bottom in .stack-card h1 but negative to offset */
 }
 .stack-img {
     height: 100px;
@@ -285,6 +287,9 @@ nav {
 .stack-img:hover, .certificate-img:hover {
     transform: scale(1.1);
 }
+.stack-card {
+    margin-bottom: 0px;
+}
 .stack-card img {
     height: 100px;
 }
@@ -292,7 +297,7 @@ nav {
     text-align: center;
     font-family: 'red hat display', sans-serif;
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     font-size: 21px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -310,10 +315,9 @@ nav {
     background-color: rgba(255, 255, 255, .025);
     margin: 50px 0;
     padding: 50px 0;
-    
 }
 .certificates-container {
-    margin: 00px 10%;
+    margin: 0px 10%;
     color: white;
     font-family: 'red hat display', sans-serif;
     text-align: center;
@@ -339,7 +343,6 @@ nav {
     margin-bottom: 10px;
     transition: 250ms;
     overflow: hidden;
-    overflow: hidden;
 }
 .certificate-img img {
     border-radius: 10px;
@@ -360,7 +363,6 @@ nav {
 }
 .certificate-card h4 {
     font-weight: 400;
-    margin-bottom: 50px;
     margin-top: 10px;
 }
 .roadmap {
