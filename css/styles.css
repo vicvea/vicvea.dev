@@ -338,8 +338,6 @@ nav {
 .certificate-card {
 }
 .certificate-img {
-    height: 200px;
-    width: auto;
     object-fit: cover;
     display: flex;
     justify-content: center;
@@ -348,14 +346,12 @@ nav {
     overflow: hidden;
 }
 .certificate-img img {
+    width: 250px;
     border-radius: 10px;
     transition: 250ms;
 }
 .certificate-img img:hover {
     border-radius: 0px;
-}
-.certificate-card {
-
 }
 .certificate-card h1{
     font-size: 24px;
@@ -559,7 +555,14 @@ footer {
         margin: 0 3%;
     }
     .certificate-grid {
+        justify-content: space-around;
         column-gap: 0;
+    }
+    .certificate-card {
+
+    }
+    .certificate-img img {
+        width: 250px;
     }
     .roadmap-container {
         margin: 0 3%;
@@ -567,4 +570,5 @@ footer {
     .contact-container {
         margin: 0 3%;
     }
+
 }
