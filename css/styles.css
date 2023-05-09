@@ -8,7 +8,8 @@
     
 }
 body {
-    margin: 0;
+
+    box-sizing: border-box;
     background: linear-gradient(to bottom right, #4990d8, #49ee6a, #f1f66d, #dc6057, #e943e6)important;
     background-image: linear-gradient(180deg, rgb(31, 37, 55), rgb(12, 12, 12)60%);
 }
@@ -496,8 +497,11 @@ footer {
     }
 } 
 @media screen and (max-width: 575px) {
-    * {
-        
+    html {
+        width: fit-content;
+    }
+    body {
+        margin: 0;
     }
     .desktop-header {
         display: none;
