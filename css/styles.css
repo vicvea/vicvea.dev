@@ -87,7 +87,6 @@ nav {
     max-height: 1000px;
     align-items: center;
     outline: 1px solid white;
-    min-height: 400px;
 }
 .left-div, .right-div {
     display: inline-block;
@@ -506,7 +505,7 @@ footer {
         display: none;
     }
     .mobile-header {
-        height: 80px;
+        height: 75px;
     }
     .logo {
         margin-left: 0;
@@ -555,10 +554,11 @@ footer {
         column-gap: 0;
     }
     .certificate-card {
-
+        width: 45%;
     }
     .certificate-img img {
-        width: 250px;
+        object-fit: cover;
+        width: 100%;
     }
     .roadmap-container {
         margin: 0 3%;
@@ -569,10 +569,8 @@ footer {
 
     .section-title {
         font-size: 2.2rem;
-        background-color: blue;
     }
     .section-description {
         font-size: 1.2rem;
-        background-color: #49ee6a;
     }
 }
