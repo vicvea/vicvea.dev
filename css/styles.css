@@ -156,12 +156,11 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    grid-auto-rows: ;
     gap: 25px;
 }
 .project-card {
     border-radius: 25px;
-    overflow: hidden;
+    overflow: hidde;
     border: 1px solid white;
     transition: 250ms;
     outline: 0 solid white;
@@ -207,7 +206,7 @@ nav {
     text-align: center;
     color: white;
     border-top: 1px solid white;
-    overflow: hidden;
+    overflow: hidde;
     background-color: rgba(255, 255, 255, 0.05);
 }
 .code-link, .demo-link{
@@ -215,7 +214,7 @@ nav {
     font-family: 'red hat display', sans-serif;
     width: 50%;
     box-sizing: border-box;
-    padding: 100% 0;
+    padding: 10% 0;
     transition: 250ms;
     font-weight: 500;
 }
@@ -272,7 +271,6 @@ nav {
 }
 .stack-grid, .certificate-grid{
     grid-template-columns: auto;
-    column-gap: ;
     row-gap: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -286,7 +284,7 @@ nav {
     justify-content: center;
     margin-bottom: 10px;
     transition: 250ms;
-    overflow: hidden;
+    overflow: hidde;
 }
 .stack-img:hover, .certificate-img:hover {
     transform: scale(1.1);
@@ -343,7 +341,7 @@ nav {
     justify-content: center;
     margin-bottom: 10px;
     transition: 250ms;
-    overflow: hidden;
+    overflow: hidde;
 }
 .certificate-img img {
     width: 250px;
@@ -499,7 +497,7 @@ footer {
 } 
 @media screen and (max-width: 575px) {
     * {
-        ;
+        
     }
     .desktop-header {
         display: none;
@@ -515,7 +513,6 @@ footer {
     }
     .mobile-header a img {
         display: flex;
-        padding: ;
     }
     .mobile-header-content {
         display: flex;
