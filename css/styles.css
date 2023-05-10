@@ -1,5 +1,5 @@
 * {
-    otline: 1px solid gray; /* Used when you want to see all of the borders without changing size */
+    outline: 1px solid gray; /* Used when you want to see all of the borders without changing size */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -84,10 +84,10 @@ nav {
 }
 .landing-container {
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 100px); /* -# offsets header height */
     max-height: 1000px;
     align-items: center;
-    outlne: 1px solid white;
+    outline: 1px solid white;
 }
 .left-div, .right-div {
     display: inline-block;
@@ -107,11 +107,13 @@ nav {
     margin: 0 0 .2ch;
     font-size: 10ch;
     line-height: 1.5ch;
+    margin: 5px 0;
 }
 .left-div p {
     margin: 0;
     font-size: 2ch;
     color: rgba(255, 255, 255, 0.75);
+    background-color: #49ee6a;
 }
 .right-div {
     font-family: 'red hat display', sans-serif;
@@ -123,7 +125,7 @@ nav {
 .right-div img {
     display: flex;
     border-radius: 25%;
-    width: 200px;
+    width: 500px;
 }
 .projects-intro {
     font-family: 'red hat display', sans-serif;
@@ -539,9 +541,9 @@ footer {
     .landing-container {
         display: block;
         flex-wrap: wrap;
-        height: calc(100vh - 80px); /* subtracting number offsets top header */
+        height: auto;
         width: 100%;
-        max-heigh: 800px;
+        max-hei ght: 800px;
         align-items: center;
         outlin: 1px solid white;
     }
@@ -550,7 +552,7 @@ footer {
         color: white;
     }
     .left-div {
-        height: 15vh;
+        height: auto;
         text-align: center;
     }
     .right-div {
@@ -560,9 +562,12 @@ footer {
         width: 90%;
     }
     .left-div h1{
-        margin: 0 0 .2ch;
+        margin: 10px 0;
         font-size: 3em;
         line-height: 1.5ch;
+    }
+    .left-div p {
+        margin: 10px 0;
     }
 
     .landing-page {
