@@ -1,5 +1,5 @@
 * {
-    outlie: 1px solid gray; /* Used when you want to see all of the borders without changing size */
+    outlin: 1px solid gray; /* Used when you want to see all of the borders without changing size */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -88,12 +88,11 @@ nav {
     height: calc(100vh - 100px); /* -# offsets header height */
     max-height: 1000px;
     align-items: center;
+    justify-content: space-around;
     outlin: 1px solid white;
 }
 .left-div, .right-div {
-    display: inline-block;
-    height: 100%;
-    width: 50%;
+    width: 45%;
     color: white;
 }
 .left-div {
@@ -105,10 +104,9 @@ nav {
     align-items: center;
 }
 .left-div h1{
-    margin: 0 0 .2ch;
     font-size: 10ch;
     line-height: 1.5ch;
-    margin: 5px 0;
+    margin: 0 0 25px;
 }
 .left-div p {
     margin: 0;
@@ -120,12 +118,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: cover;
 }
 .right-div img {
+    object-fit: cover;
     display: flex;
-    border-radius: 25%;
-    width: 500px;
+    border-radius: 20%;
+    height: 100%;
 }
 .projects-intro {
     font-family: 'red hat display', sans-serif;
