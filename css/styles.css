@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid gray; /* Used when you want to see all of the borders without changing size */
+    outlie: 1px solid gray; /* Used when you want to see all of the borders without changing size */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,6 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     background: transparent;
+    outline: 1px solid white;
 }
 header a {
     text-decoration: none;
@@ -87,7 +88,7 @@ nav {
     height: calc(100vh - 100px); /* -# offsets header height */
     max-height: 1000px;
     align-items: center;
-    outline: 1px solid white;
+    outlin: 1px solid white;
 }
 .left-div, .right-div {
     display: inline-block;
@@ -113,7 +114,6 @@ nav {
     margin: 0;
     font-size: 2ch;
     color: rgba(255, 255, 255, 0.75);
-    background-color: #49ee6a;
 }
 .right-div {
     font-family: 'red hat display', sans-serif;
@@ -135,7 +135,6 @@ nav {
 }
 .projects-intro h1 {
     margin-bottom: 25px;
-    margin-top: 0;
 }
 .projects-intro p {
     margin: 0;
@@ -460,7 +459,7 @@ footer {
     border-radius: 10px;
     transition: 250ms;
 }
-.social-container:hover{
+.social-container:hover {
     scale: 1.2;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.75);
@@ -562,12 +561,12 @@ footer {
         width: 90%;
     }
     .left-div h1{
-        margin: 10px 0;
+        margin: 50px 0 25px;
         font-size: 3em;
         line-height: 1.5ch;
     }
     .left-div p {
-        margin: 10px 0;
+        margin: 10px 0 50px;
     }
 
     .landing-page {
