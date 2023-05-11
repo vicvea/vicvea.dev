@@ -1,5 +1,5 @@
 * {
-    outlin: 1px solid gray; /* Used when you want to see all of the borders without changing size */
+    outline: 1px solid gray; /* Used when you want to see all of the borders without changing size */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -70,6 +70,23 @@ nav {
     color: black;
     border-radius: 10px;
     scale: 1.1;
+}
+.mobile-header {
+    height: 75px;
+}
+.mobile-header a img {
+    display: flex;
+    filter: invert();
+}
+.mobile-header nav {
+    display: none;
+}
+.mobile-header-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 3%;
 }
 .section-title {
     font-size: 42px;
@@ -485,22 +502,45 @@ footer {
     text-decoration: none;
     color: white;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1201px) {
     .mobile-header {
         display: none;
     }
 }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .mobile-header {
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    .desktop-header {
         display: none;
     }
-}
-@media screen and (min-width: 576px) and (max-width: 767px) {
-    .mobile-header {
-        display: none;
+    .landing-page {
+        margin: 0 3%;
+    }
+    .landing-container {
+        height: calc(10vh - 100px); /* -# offsets header height */
+        min-height: max(550px, 50vh);
+    }
+    .left-div, .right-div {
+        width: 100%;
+        color: white;
+    }
+    .left-div {
+        height: auto;
+    }
+    .right-div {
+        height: auto;
+    }
+    .right-div img {
+        width: 95%;
+    }
+    .left-div h1{
+        margin: 50px 0 25px;
+        font-size: 3em;
+        line-height: 1.5ch;
+    }
+    .left-div p {
+        margin: 10px 0 50px;
     }
 } 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 600px) {
     * {
     }
     html {
@@ -523,10 +563,6 @@ footer {
     .mobile-header nav {
         display: none;
     }
-    .mobile-header a img {
-        display: flex;
-        filter: invert(1);
-    }
     .mobile-header-content {
         display: flex;
         align-items: center;
@@ -534,7 +570,10 @@ footer {
         justify-content: space-between;
         margin: 0 3%;
     }
-
+    
+    .landing-page {
+        margin: 0 3%;
+    }
     .landing-container {
         display: block;
         flex-wrap: wrap;
@@ -567,9 +606,6 @@ footer {
         margin: 10px 0 50px;
     }
 
-    .landing-page {
-        margin: 0 3%;
-    }
     .projects-intro {
         margin:  50px 3%;
     }
