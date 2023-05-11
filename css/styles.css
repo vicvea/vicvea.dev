@@ -117,7 +117,7 @@ nav {
     height: calc(100vh - 100px); /* -# offsets header height */
     max-height: 1000px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     outlin: 1px solid white;
 }
 .left-div, .right-div {
@@ -153,6 +153,7 @@ nav {
     display: flex;
     border-radius: 20%;
     height: 100%;
+    max-width: 100%;
 }
 .projects-intro {
     font-family: 'red hat display', sans-serif;
@@ -531,9 +532,8 @@ footer {
         min-height: max(50px, 5vh);
     }
     .left-div, .right-div {
-        width: 100%;
+        width: 45%;
         color: white;
-        padding: 0 1%;
     }
     .left-div {
         height: auto;
