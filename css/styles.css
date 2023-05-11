@@ -41,6 +41,18 @@ header a {
     color: white;
     padding: 0 10px;
 }
+.mobile-logo {
+    margin-left: 0;
+}
+.mobile-logo a{
+    font-family: 'red hat display', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    padding: 0 10px;
+}
 nav {
     margin-right: calc(10% - 10px);
     margin-left: -50px;
@@ -515,12 +527,13 @@ footer {
         margin: 0 3%;
     }
     .landing-container {
-        height: calc(10vh - 100px); /* -# offsets header height */
-        min-height: max(550px, 50vh);
+        height: calc(75vw - 100px); /* -# offsets header height */
+        min-height: max(50px, 5vh);
     }
     .left-div, .right-div {
         width: 100%;
         color: white;
+        padding: 0 1%;
     }
     .left-div {
         height: auto;
@@ -529,7 +542,7 @@ footer {
         height: auto;
     }
     .right-div img {
-        width: 95%;
+        width: 100%;
     }
     .left-div h1{
         margin: 50px 0 25px;
@@ -538,6 +551,24 @@ footer {
     }
     .left-div p {
         margin: 10px 0 50px;
+    }
+    .projects-intro {
+    margin:  50px 5%;
+    }
+    .portfolio-container {
+    margin: 50px 5% 0; /* remove 3rd 0 and padding-bottom: 50px; below for even spacing */
+    }
+    .stack-container {
+    margin: 0px 5%;
+    }
+    .certificates-container {
+    margin: 0 5%;
+    }
+    .roadmap-container {
+    margin: 0 5%;
+    }
+    .contact-container {
+    margin: 0 5%;
     }
 } 
 @media screen and (max-width: 600px) {
@@ -556,9 +587,6 @@ footer {
     }
     .mobile-header {
         height: 75px;
-    }
-    .logo {
-        margin-left: 0;
     }
     .mobile-header nav {
         display: none;
