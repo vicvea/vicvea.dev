@@ -1,5 +1,5 @@
 * {
-    outlin: 1px solid gray; /* Used when you want to see all of the borders without changing size */
+    outline: 1px solid gray; /* Used when you want to see all of the borders without changing size */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -114,11 +114,13 @@ nav {
 }
 .landing-container {
     display: flex;
-    height: calc(100vh - 100px); /* -# offsets header height */
+    heigh: calc(80vh + 100px); /* -# offsets header height */
     max-height: 1000px;
+    min-height: 500px;
     align-items: center;
     justify-content: space-evenly;
     outlin: 1px solid white;
+    background-color: ;
 }
 .left-div, .right-div {
     width: 45%;
@@ -147,13 +149,14 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: ;
 }
 .right-div img {
     object-fit: cover;
     display: flex;
     border-radius: 20%;
-    height: 100%;
-    max-width: 100%;
+    height: auto;
+    width: 100%;
 }
 .projects-intro {
     font-family: 'red hat display', sans-serif;
@@ -528,7 +531,7 @@ footer {
         margin: 0 3%;
     }
     .landing-container {
-        height: calc(75vw - 100px); /* -# offsets header height */
+        height: calc(75vw - 75px); /* -# offsets header height */
         min-height: max(50px, 5vh);
     }
     .left-div, .right-div {
