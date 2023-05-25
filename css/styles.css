@@ -1,5 +1,5 @@
 * {
-    outlin: 1px solid gray; /* Used when you want to see all of the borders without changing size */
+    outline: 1px solid gray; /* Used when you want to see all of the borders without changing size */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -271,6 +271,7 @@ nav {
 .see-more-container {
     display: flex;
     margin-top: 50px;
+    margin-bottom: -50px
 }
 .see-more-button {
     color: white;
