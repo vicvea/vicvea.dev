@@ -23,7 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     background: transparent;
-    outline: 1px solid white;
+    outline: 0px solid white;
 }
 header a {
     text-decoration: none;
